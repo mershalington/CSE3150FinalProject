@@ -1,0 +1,20 @@
+Marshall Flowers Part 4 Write-Up:
+
+To build an executable from my code, run the command "g++ -o test ECAirlineFinancial.cpp ECAirlineOperation.cpp ECAirlineSimulator.cpp ECAirlineTicketing.cpp ECAirport.cpp ECConsoleUIButton.cpp ECConsoleUIListBox.cpp ECConsoleUISearchButton.cpp ECConsoleUITextLabel.cpp ECConsoleUIView.cpp ECFlight.cpp ECFlightItinerary.cpp ECTextViewImp.cpp main.cpp".
+
+In order to run the executable, run the command "./test input.txt". You may replace "input.txt" with the name of any valid configuration file.
+
+(i) I did not do any extra credit. That said, I have successfully implemented every mandatory feature. You may use Origination and Destination list boxes to select a source airport and destination airport. If there are multiple airports, you may scroll through these list boxes to select your choices. Afterwards, you may crtl-A to the button item, which upon hitting the enter key, uses your choices from the Origination and Destination list boxes to search for valid itineraries. It will then display the found itineraries, if any, in a third list box. Of course, you may then crtl-A to this list box to look at the itineraries, which again allows scrolling when there are multiple itineraries to view. You are allowed to repeat the process, selecting a new source and destination airport and hitting enter on the button, which will overwrite/repopulate the output list box with the new itineraries. I provide screenshots and a video showing these features.
+
+A few quick things to note:
+1) My button object is a subclass of the button class we were given, but a button nonetheless.
+2) My itineraries include the necessary information: number of segments, flight duration, and price. 
+3) The displayed itineraries are not necessarily sorted since I did not do any extra credit.
+4) I implemented scrolling in a way slightly different from part 3's pdf, but Professor Yufeng approved it.
+5) I added a status row at the bottom of the view.
+
+(ii) I did not implement any extra credit features. That is, I did not do any passenger-related work, itinerary sorting, or implement the text field.
+
+(iii) I am not aware of any bugs after much testing. There may be issues when the itinerary display strings are too long, but according to my code, they would simply be truncated to fit properly on the screen.
+
+(iv) NA
